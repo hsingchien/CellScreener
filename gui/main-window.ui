@@ -6,226 +6,233 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1485</width>
-    <height>860</height>
+    <width>1880</width>
+    <height>1155</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>CellScreener</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>490</y>
-      <width>1011</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>1011</width>
-      <height>471</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="frame_layout">
-     <item>
-      <widget class="QGraphicsView" name="msframe1"/>
-     </item>
-     <item>
-      <widget class="QGraphicsView" name="msframe2"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>510</y>
-      <width>1011</width>
-      <height>291</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="trace_layout">
-     <item>
-      <widget class="QGraphicsView" name="trace1"/>
-     </item>
-     <item>
-      <widget class="QGraphicsView" name="trace2"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>1030</x>
-      <y>10</y>
-      <width>421</width>
-      <height>511</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="0">
-      <widget class="QTableWidget" name="celltable_1"/>
-     </item>
-     <item row="0" column="1">
-      <widget class="QTableWidget" name="celltable_2"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="cell1_label">
-       <property name="text">
-        <string>Good</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="cell2_label">
-       <property name="text">
-        <string>Good</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="goodcount_label">
-       <property name="text">
-        <string>Good count</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="badcount_label">
-       <property name="text">
-        <string>Bad count</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>1031</x>
-      <y>530</y>
-      <width>302</width>
-      <height>126</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="control_layout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="currentframe_label">
-       <property name="text">
-        <string>Current Frame</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>Sort cell by</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QComboBox" name="sortmethod_comboBox"/>
-     </item>
-     <item row="1" column="0" colspan="2">
-      <widget class="QCheckBox" name="showgoodcell_checkBox">
-       <property name="text">
-        <string>Show good cells</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="zoom_label">
-       <property name="text">
-        <string>Zoom</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3" colspan="2">
-      <widget class="QSlider" name="horizontalSlider_2">
-       <property name="maximum">
-        <number>99</number>
-       </property>
-       <property name="sliderPosition">
-        <number>0</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="2">
-      <widget class="QCheckBox" name="showbadcell_label">
-       <property name="text">
-        <string>Show bad cells</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QLabel" name="contour_label">
-       <property name="text">
-        <string>Contour</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3" colspan="2">
-      <widget class="QSlider" name="horizontalSlider_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4">
-      <widget class="QLabel" name="tracemode_label">
-       <property name="text">
-        <string>Trace</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0" colspan="2">
-      <widget class="QComboBox" name="image1mode_comboBox"/>
-     </item>
-     <item row="4" column="2" colspan="2">
-      <widget class="QComboBox" name="image2mode_comboBox"/>
-     </item>
-     <item row="4" column="4">
-      <widget class="QComboBox" name="comboBox_4"/>
-     </item>
-     <item row="0" column="1" colspan="2">
-      <widget class="QSpinBox" name="spinBox_2"/>
-     </item>
-     <item row="3" column="0" colspan="2">
-      <widget class="QLabel" name="image1_label">
-       <property name="text">
-        <string>Image1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2" colspan="2">
-      <widget class="QLabel" name="image2_label">
-       <property name="text">
-        <string>Image2</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="4,1">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="4,1,2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+          <item>
+           <widget class="QGraphicsView" name="msframe1"/>
+          </item>
+          <item>
+           <widget class="QGraphicsView" name="msframe2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="trace_layout" stretch="1,1">
+          <item>
+           <widget class="QGraphicsView" name="trace1"/>
+          </item>
+          <item>
+           <widget class="QGraphicsView" name="trace2"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="4,2">
+        <property name="spacing">
+         <number>33</number>
+        </property>
+        <item>
+         <layout class="QGridLayout" name="celltable_layout" rowstretch="20,1,1" columnstretch="1,1">
+          <item row="2" column="0">
+           <widget class="QLabel" name="goodcount_label">
+            <property name="text">
+             <string>Good count</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="cell2_label">
+            <property name="text">
+             <string>Good</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="badcount_label">
+            <property name="text">
+             <string>Bad count</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QTableWidget" name="celltable_2"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="cell1_label">
+            <property name="text">
+             <string>Good</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="celltable_1"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="control_layout" rowstretch="1,1,1,1,1,7" columnstretch="1,1,1,1,1">
+          <item row="5" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="2" colspan="2">
+           <widget class="QComboBox" name="image2mode_comboBox"/>
+          </item>
+          <item row="1" column="3" colspan="2">
+           <widget class="QSlider" name="horizontalSlider_2">
+            <property name="maximum">
+             <number>99</number>
+            </property>
+            <property name="sliderPosition">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="QComboBox" name="comboBox_4"/>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLabel" name="image1_label">
+            <property name="text">
+             <string>Image1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QComboBox" name="sortmethod_comboBox"/>
+          </item>
+          <item row="3" column="4">
+           <widget class="QLabel" name="tracemode_label">
+            <property name="text">
+             <string>Trace</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <widget class="QComboBox" name="image1mode_comboBox"/>
+          </item>
+          <item row="3" column="2" colspan="2">
+           <widget class="QLabel" name="image2_label">
+            <property name="text">
+             <string>Image2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="currentframe_label">
+            <property name="text">
+             <string>Current Frame</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QCheckBox" name="showgoodcell_checkBox">
+            <property name="text">
+             <string>Show good cells</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="contour_label">
+            <property name="text">
+             <string>Contour</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Sort cell by</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="zoom_label">
+            <property name="text">
+             <string>Zoom</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QCheckBox" name="showbadcell_label">
+            <property name="text">
+             <string>Show bad cells</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3" colspan="2">
+           <widget class="QSlider" name="horizontalSlider_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QSpinBox" name="spinBox_2"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1485</width>
+     <width>1880</width>
      <height>21</height>
     </rect>
    </property>
