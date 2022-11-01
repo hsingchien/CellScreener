@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1465</width>
+    <width>1485</width>
     <height>860</height>
    </rect>
   </property>
@@ -14,92 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="tableView_2">
-    <property name="geometry">
-     <rect>
-      <x>1260</x>
-      <y>20</y>
-      <width>181</width>
-      <height>291</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>1120</x>
-      <y>330</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sort Cell1</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>1310</x>
-      <y>330</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sort Cell 2</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>501</width>
-      <height>471</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_2" native="true">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>10</y>
-      <width>501</width>
-      <height>471</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>510</y>
-      <width>1011</width>
-      <height>141</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="widget_4" native="true">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>660</y>
-      <width>1011</width>
-      <height>141</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTableView" name="tableView_3">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>20</y>
-      <width>181</width>
-      <height>291</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QSlider" name="horizontalSlider">
     <property name="geometry">
      <rect>
@@ -113,13 +27,205 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1011</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="frame_layout">
+     <item>
+      <widget class="QGraphicsView" name="msframe1"/>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="msframe2"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>1011</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="trace_layout">
+     <item>
+      <widget class="QGraphicsView" name="trace1"/>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="trace2"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>10</y>
+      <width>421</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QTableWidget" name="celltable_1"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QTableWidget" name="celltable_2"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="cell1_label">
+       <property name="text">
+        <string>Good</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="cell2_label">
+       <property name="text">
+        <string>Good</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="goodcount_label">
+       <property name="text">
+        <string>Good count</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="badcount_label">
+       <property name="text">
+        <string>Bad count</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1031</x>
+      <y>530</y>
+      <width>302</width>
+      <height>126</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="control_layout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="currentframe_label">
+       <property name="text">
+        <string>Current Frame</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Sort cell by</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QComboBox" name="sortmethod_comboBox"/>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QCheckBox" name="showgoodcell_checkBox">
+       <property name="text">
+        <string>Show good cells</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="zoom_label">
+       <property name="text">
+        <string>Zoom</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3" colspan="2">
+      <widget class="QSlider" name="horizontalSlider_2">
+       <property name="maximum">
+        <number>99</number>
+       </property>
+       <property name="sliderPosition">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QCheckBox" name="showbadcell_label">
+       <property name="text">
+        <string>Show bad cells</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="contour_label">
+       <property name="text">
+        <string>Contour</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3" colspan="2">
+      <widget class="QSlider" name="horizontalSlider_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="tracemode_label">
+       <property name="text">
+        <string>Trace</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QComboBox" name="image1mode_comboBox"/>
+     </item>
+     <item row="4" column="2" colspan="2">
+      <widget class="QComboBox" name="image2mode_comboBox"/>
+     </item>
+     <item row="4" column="4">
+      <widget class="QComboBox" name="comboBox_4"/>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QSpinBox" name="spinBox_2"/>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QLabel" name="image1_label">
+       <property name="text">
+        <string>Image1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" colspan="2">
+      <widget class="QLabel" name="image2_label">
+       <property name="text">
+        <string>Image2</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1465</width>
+     <width>1485</width>
      <height>21</height>
     </rect>
    </property>
